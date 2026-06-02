@@ -725,7 +725,7 @@ fun KeypadPane(viewModel: CalculatorViewModel, theme: CalcTheme, haptic: HapticF
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "Symbol",
+                    text = "Scientific",
                     color = if (isAdvancedMode) theme.accent else Color.Gray,
                     fontSize = 12.sp,
                     fontWeight = FontWeight.Bold,

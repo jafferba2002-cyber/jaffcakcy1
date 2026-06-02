@@ -1,30 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
-    <path
-        android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="1.28"
+        android:scaleY="1.28">
+
+        <!-- 1. Deep 3D Shadow for the Calculator Body -->
+        <path
+            android:fillColor="#CC6E00"
+            android:pathData="M37,23h34c6.6,0 12,5.4 12,12v43c0,6.6 -5.4,12 -12,12H37c-6.6,0 -12,-5.4 -12,-12V35C25,28.4 30.4,23 37,23Z" />
+
+        <!-- 2. Mid-shadow Layer for Enhanced Claymorphism Depth -->
+        <path
+            android:fillColor="#E67E00"
+            android:pathData="M37,21.5h34c6.6,0 12,5.4 12,12v43c0,6.6 -5.4,12 -12,12H37c-6.6,0 -12,-5.4 -12,-12v-43C25,26.9 30.4,21.5 37,21.5Z" />
+
+        <!-- 3. Primary Shiny Orange Calculator Face -->
+        <path
+            android:fillColor="#FFA000"
+            android:pathData="M37,20h34c6.6,0 12,5.4 12,12v43c0,6.6 -5.4,12 -12,12H37c-6.6,0 -12,-5.4 -12,-12V32C25,25.4 30.4,20 37,20Z" />
+
+        <!-- 4. Soft Top-face Bezel Gradient Accent -->
+        <path
+            android:fillColor="#FFB300"
+            android:pathData="M37,20h34c6.6,0 12,5.4 12,12v15H25V32C25,25.4 30.4,20 37,20Z" />
+
+        <!-- 5. LCD Screen Dark Indigo Bezel -->
+        <path
+            android:fillColor="#283593"
+            android:pathData="M33,26h42c1.1,0 2,0.9 2,2v11c0,1.1 -0.9,2 -2,2H33c-1.1,0 -2,-0.9 -2,-2V28C31,26.9 31.9,26 33,26Z" />
+
+        <!-- 6. LCD Screen Blue Display (Claymorphism screen) -->
+        <path
+            android:fillColor="#3F51B5"
+            android:pathData="M33.5,27h41c0.8,0 1.5,0.7 1.5,1.5v10c0,0.8 -0.7,1.5 -1.5,1.5h-41c-0.8,0 -1.5,-0.7 -1.5,-1.5v-10C32,27.7 32.7,27 33.5,27Z" />
+
+        <!-- 7. Digital Number "0" on Screen -->
+        <!-- Zero Outer Loop -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M65,31c0,-1.7 0.9,-3 2,-3c1.1,0 2,1.3 2,3v3c0,1.7 -0.9,3 -2,3c-1.1,0 -2,-1.3 -2,-3V31Z" />
+        <!-- Zero Inner Core -->
+        <path
+            android:fillColor="#3F51B5"
+            android:pathData="M66,31c0,-0.8 0.4,-1 1,-1c0.6,0 1,0.2 1,1v3c0,0.8 -0.4,1 -1,1c-0.6,0 -1,-0.2 -1,-1V31Z" />
+
+        <!-- 8. Button Grids -->
+        <!-- ROW 1 -->
+        <!-- Key 1_1 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M32,46h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,46.4 31.4,46 32,46Z" />
+        <!-- Key 1_1 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M32,45h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,45.4 31.4,45 32,45Z" />
+
+        <!-- Key 1_2 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M45,46h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,46.4 44.4,46 45,46Z" />
+        <!-- Key 1_2 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M45,45h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,45.4 44.4,45 45,45Z" />
+
+        <!-- Key 1_3 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M58,46h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,46.4 57.4,46 58,46Z" />
+        <!-- Key 1_3 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M58,45h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,45.4 57.4,45 58,45Z" />
+
+        <!-- Key 1_4 Operator (Orange-Yellow shadow, pale orange face) -->
+        <path android:fillColor="#F57C00" android:pathData="M71,46h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,46.4 70.4,46 71,46Z" />
+        <path android:fillColor="#FFE082" android:pathData="M71,45h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,45.4 70.4,45 71,45Z" />
+
+        <!-- ROW 2 -->
+        <!-- Key 2_1 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M32,57h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,57.4 31.4,57 32,57Z" />
+        <!-- Key 2_1 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M32,56h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,56.4 31.4,56 32,56Z" />
+
+        <!-- Key 2_2 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M45,57h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,57.4 44.4,57 45,57Z" />
+        <!-- Key 2_2 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M45,56h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,56.4 44.4,56 45,56Z" />
+
+        <!-- Key 2_3 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M58,57h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,57.4 57.4,57 58,57Z" />
+        <!-- Key 2_3 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M58,56h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,56.4 57.4,56 58,56Z" />
+
+        <!-- Key 2_4 Operator -->
+        <path android:fillColor="#F57C00" android:pathData="M71,57h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,57.4 70.4,57 71,57Z" />
+        <path android:fillColor="#FFE082" android:pathData="M71,56h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,56.4 70.4,56 71,56Z" />
+
+        <!-- ROW 3 -->
+        <!-- Key 3_1 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M32,68h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,68.4 31.4,68 32,68Z" />
+        <!-- Key 3_1 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M32,67h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C31,67.4 31.4,67 32,67Z" />
+
+        <!-- Key 3_2 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M45,68h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,68.4 44.4,68 45,68Z" />
+        <!-- Key 3_2 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M45,67h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C44,67.4 44.4,67 45,67Z" />
+
+        <!-- Key 3_3 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M58,68h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,68.4 57.4,68 58,68Z" />
+        <!-- Key 3_3 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M58,67h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,67.4 57.4,67 58,67Z" />
+
+        <!-- Key 3_4 Operator -->
+        <path android:fillColor="#F57C00" android:pathData="M71,68h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,68.4 70.4,68 71,68Z" />
+        <path android:fillColor="#FFE082" android:pathData="M71,67h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,67.4 70.4,67 71,67Z" />
+
+        <!-- ROW 4 -->
+        <!-- Key 4_1 (Wide Zero Key) Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M32,79h22c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1H32c-0.6,0 -1,-0.4 -1,-1v-5C31,79.4 31.4,79 32,79Z" />
+        <!-- Key 4_1 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M32,78h22c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1H32c-0.6,0 -1,-0.4 -1,-1v-5C31,78.4 31.4,78 32,78Z" />
+
+        <!-- Key 4_3 Shadow -->
+        <path android:fillColor="#CCCCCC" android:pathData="M58,79h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,79.4 57.4,79 58,79Z" />
+        <!-- Key 4_3 Face -->
+        <path android:fillColor="#FFFFFF" android:pathData="M58,78h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C57,78.4 57.4,78 58,78Z" />
+
+        <!-- Key 4_4 Equal Key (Clay blue theme shade) -->
+        <!-- Shadow -->
+        <path android:fillColor="#303F9F" android:pathData="M71,79h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,79.4 70.4,79 71,79Z" />
+        <!-- Face -->
+        <path android:fillColor="#5C6BC0" android:pathData="M71,78h9c0.6,0 1,0.4 1,1v5c0,0.6 -0.4,1 -1,1h-9c-0.6,0 -1,-0.4 -1,-1v-5C70,78.4 70.4,78 71,78Z" />
+
+        <!-- Equal Sign Lines -->
+        <path android:fillColor="#FFFFFF" android:pathData="M74,80h3.5v0.8h-3.5z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M74,82h3.5v0.8h-3.5z" />
+
+    </group>
 </vector>
