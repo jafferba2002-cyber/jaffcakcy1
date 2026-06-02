@@ -1,0 +1,6 @@
+{
+  "name": "jaffcalcy",
+  "description": "An advanced bento grid scientific calculator with customizable colorful themes, tactile haptic feedback settings, and a gorgeous liquid glass design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
